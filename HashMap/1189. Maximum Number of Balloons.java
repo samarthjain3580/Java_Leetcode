@@ -20,8 +20,8 @@ class Solution {
             min = Math.min(min, available / required);
         }
 
-        System.out.println(map_text);
-        System.out.println(map_balloon);
+        // System.out.println(map_text);
+        // System.out.println(map_balloon);
 
         return min;
     }
