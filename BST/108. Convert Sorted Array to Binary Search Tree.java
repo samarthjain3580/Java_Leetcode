@@ -22,7 +22,8 @@ class Solution {
     public TreeNode BST(int[] nums, int left, int right) {
         if (left > right) return null;
         
-        int mid = (left + right) /2;
+        int mid = (left + right) /2; // left middle;
+        // int mid = (left + right + 1) /2 // right middle;
         TreeNode root = new TreeNode(nums[mid]);
         root.left = BST(nums, left, mid-1);
         root.right = BST(nums, mid+1, right);
