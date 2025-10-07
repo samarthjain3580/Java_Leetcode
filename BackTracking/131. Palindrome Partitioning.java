@@ -1,4 +1,4 @@
-\class Solution {
+class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> ans = new ArrayList<>();
         List<String> list = new ArrayList<>();
