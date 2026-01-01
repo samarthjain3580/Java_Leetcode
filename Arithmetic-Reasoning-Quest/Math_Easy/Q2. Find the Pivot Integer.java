@@ -1,3 +1,4 @@
+// time complexity: O(N)
 class Solution {
     public int pivotInteger(int n) {
         int totalSum = n * (n + 1) / 2;
@@ -13,3 +14,33 @@ class Solution {
         return -1;
     }
 }
+
+//Time Complexity: O(n*n)
+class Solution {
+    public int pivotInteger(int n) {
+        for(int x=1; x<=n; x++) {
+            int left = 0, right = 0;
+            for(int i=1; i<=x; i++) {
+                left+=i;
+            }
+
+            for(int j=x; j<=n; j++) {
+                right+=j;
+            }
+
+            if(left == right) return x;
+        }
+        return -1;
+    }
+}
+
+//Time Complexity: O(1)
+class Solution {
+    public int pivotInteger(int n) {
+        int total = n * (n + 1) / 2;
+        int x = (int) Math.sqrt(total);
+
+        return x * x == total ? x : -1;
+    }
+}
+
