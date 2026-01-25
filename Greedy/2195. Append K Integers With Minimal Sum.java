@@ -1,3 +1,6 @@
+// OPtimized Method 
+// Brute force in Sorting (medium)
+
 class Solution {
     public long minimalKSum(int[] nums, int count) {
         Arrays.sort(nums);
